@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 # ------------------------------
-# ✅ Set page config (must be first Streamlit command)
+# Set page config (must be first Streamlit command)
 # ------------------------------
 st.set_page_config(page_title="Credit Card Fraud Detection", page_icon="💳", layout="centered")
 
@@ -22,22 +22,22 @@ model, scaler = load_assets()
 # ------------------------------
 # Streamlit UI
 # ------------------------------
-st.title("💳 Credit Card Fraud Detection")
+st.title(" Credit Card Fraud Detection")
 st.markdown("""
-This interactive app uses a trained **XGBoost Machine Learning model**  
-to predict whether a credit card transaction is **fraudulent or legitimate**.
+This interactive app uses a trained XGBoost Machine Learning model  
+to predict whether a credit card transaction is fraudulent or legitimate.
 """)
 
 st.divider()
-st.header("🧾 Enter Transaction Details")
+st.header("Enter Transaction Details")
 
 col1, col2 = st.columns(2)
 with col1:
-    amount = st.number_input("💰 Transaction Amount (₹)", min_value=0.0, value=500.0, step=10.0)
+    amount = st.number_input(" Transaction Amount (₹)", min_value=0.0, value=500.0, step=10.0)
 with col2:
-    time = st.number_input("⏱️ Time (in seconds since first transaction)", min_value=0.0, value=100000.0, step=1000.0)
+    time = st.number_input("Time (in seconds since first transaction)", min_value=0.0, value=100000.0, step=1000.0)
 
-st.caption("⚙️ PCA-based features (V1–V28) are filled with neutral defaults for demo purposes.")
+st.caption("PCA-based features (V1–V28) are filled with neutral defaults for demo purposes.")
 
 # ------------------------------
 # Prepare Input Data
@@ -52,12 +52,12 @@ input_data[['Time', 'Amount']] = scaler.transform(input_data[['Time', 'Amount']]
 # ------------------------------
 # Prediction Section
 # ------------------------------
-if st.button("🔍 Predict Fraud Risk"):
+if st.button(" Predict Fraud Risk"):
     prediction = model.predict(input_data)[0]
     prob = model.predict_proba(input_data)[0][1] if hasattr(model, "predict_proba") else None
 
     st.divider()
-    st.subheader("📊 Prediction Result")
+    st.subheader(" Prediction Result")
 
     # Risk Level Logic
     if prob < 0.30:
@@ -74,7 +74,7 @@ if st.button("🔍 Predict Fraud Risk"):
         bar_color = "red"
 
     # Fraud or Legit Text
-    result = "🚨 Fraudulent Transaction Detected!" if prediction == 1 else "✅ Legitimate Transaction"
+    result = " Fraudulent Transaction Detected!" if prediction == 1 else "✅ Legitimate Transaction"
     
     # Display Main Result
     st.markdown(f"### {result}")
