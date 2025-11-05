@@ -1,7 +1,7 @@
 # 💳 Credit Card Fraud Detection using Machine Learning
 
 This project detects fraudulent credit card transactions using **Machine Learning** models like **XGBoost**, **Random Forest**, and **Logistic Regression**.  
-It demonstrates a complete **end-to-end Data Science workflow** — from data preprocessing to real-time web deployment using **Streamlit**.
+It demonstrates a complete **end-to-end Data Science workflow** — from data preprocessing to real-time web deployment using **HuggingFace**.
 
 ---
 
@@ -29,7 +29,7 @@ The app predicts whether a transaction is **Fraudulent (1)** or **Legitimate (0)
   - Model Training & Evaluation  
   - Saving models with **Joblib**
 - 🧠 ML Algorithms: Logistic Regression, Random Forest, XGBoost
-- 🌐 Interactive **Streamlit Web App**
+- 🌐 Interactive **HuggingFace Web App**
 - 💡 Real-time transaction prediction with confidence meter and risk visualization
 - 🎨 Clean and professional UI with color-coded fraud risk levels
 
@@ -42,7 +42,7 @@ The app predicts whether a transaction is **Fraudulent (1)** or **Legitimate (0)
 | **Language** | Python |
 | **ML Libraries** | Scikit-learn, XGBoost, imbalanced-learn |
 | **Visualization** | Matplotlib, Seaborn |
-| **Deployment** | Streamlit |
+| **Deployment** | HuggingFace |
 | **Data Handling** | Pandas, NumPy |
 
 ---
@@ -56,7 +56,7 @@ The app predicts whether a transaction is **Fraudulent (1)** or **Legitimate (0)
 | **XGBoost (Final Model)** | **1.00** | **1.00** | **1.00** | **0.9996** | **100%** |
 
 ✅ **Final Model:** XGBoost  
-✅ **Deployed Using:** Streamlit Cloud  
+✅ **Deployed Using:** HuggingFace Space  
 ✅ **Key Metric:** ROC-AUC = 0.9996  
 
 ---
