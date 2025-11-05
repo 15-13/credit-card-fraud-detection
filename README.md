@@ -6,7 +6,7 @@ It demonstrates a complete **end-to-end Data Science workflow** — from data pr
 ---
 
 ## 🚀 Live Demo  
-👉 [Click here to try the app on Hugging Face](https://YOUR-USERNAME-credit-card-fraud-detection.hf.space)
+👉 [Click here to try the app on Hugging Face](https://huggingface.co/spaces/HarshilUndhad/credit-card-fraud-detection )
 
 
 ---
