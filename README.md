@@ -5,8 +5,9 @@ It demonstrates a complete **end-to-end Data Science workflow** — from data pr
 
 ---
 
-## 🚀 Live Demo
-👉 [Open the Streamlit App](https://harshilundhad-credit-card-fraud-detection.streamlit.app)
+## 🚀 Live Demo  
+👉 [Click here to try the app on Hugging Face](https://YOUR-USERNAME-credit-card-fraud-detection.hf.space)
+
 
 ---
 
