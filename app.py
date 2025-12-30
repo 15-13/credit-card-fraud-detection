@@ -100,5 +100,5 @@ st.divider()
 st.markdown("""
 **🧠 Model:** XGBoost | **Developer:** Harshil Undhad  
 📘 [GitHub Repository](https://github.com/harshilundhad/credit-card-fraud-detection)  
-💡 *End-to-end ML pipeline for fraud detection with Streamlit deployment.*
+💡 *End-to-end ML pipeline for fraud detection with streamlit deployment.*
 """)
